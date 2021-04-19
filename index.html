@@ -173,16 +173,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="个人博客搭建（Hexo-Github）"><a href="#个人博客搭建（Hexo-Github）" class="headerlink" title="个人博客搭建（Hexo + Github）"></a>个人博客搭建（Hexo + Github）</h3><p>(Windows 10环境下)</p>
-<p>1、下载安装git，一路默认就行，完成后会有 Git Bash 、Git GUI等，要使用的是Git Bash，方便操作（官网）</p>
+<p>1、下载安装git，一路默认就行，完成后会有 Git Bash、Git GUI等，要使用的是Git Bash，方便操作（官网）</p>
 <p>2、下载安装nodejs，因为Hexo是基于Nodejs写的，所以需要安装nodejs和npm工具，也一路默认（官网）</p>
 <p>​        Windows安装LTS版本</p>
 <p>​        上面两步完成后，打开Git，输入 git –version        node -v        npm -v 即可查看已版本，判断是否安装成功</p>
 <p>3、在Git输入命令 npm install -g hexo-cli    ，即可安装Hexo，然后输入    hexo -v    即可查看版本</p>
 <p>​        （也有安装cnpm即npm镜像版本，速度更快，没试过）        </p>
 <p>​            npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org</a>     # 安装淘宝的cnpm管理器<br>​            cnpm -v<br>​            cnpm install -g hexo-cli</p>
-<p>4、新建空文件夹 blog，右击选择 Git Bash Here，然后输入 hexo init    # 初始化Hexo</p>
+<p>4、新建空文件夹 blog，右击选择Git Bash Here，然后输入 hexo init    # 初始化Hexo</p>
 <p>​    （或通过命令行创建 mkdir 新的文件夹并进入 cd blog）</p>
-<p>​    （文件夹一定要建在 C:\Users\24545\ 目录下，否则用Gitbash输入接下来的命令会报错，即没有权限，）</p>
+<p>​    （文件夹一定要建在 C:\Users\×××\ 目录下，否则用Gitbash输入接下来的命令会报错，即没有权限，）</p>
 <p>​    （3、4步先后顺序无所谓，好像最后npm、hexo文件都在同一个文件目录下）</p>
 <p>5、输入 npm install    (这步不要好像也行！？)</p>
 <p>​        hexo s/hexo server    # 启动本地博客服务</p>
@@ -203,7 +203,7 @@
 <p>​        完成后会在目录下生成 .ssh 文件夹，里面的 id_rsa.pub 为公共密钥，另一个 is_rsa 为私有密钥</p>
 <p>​        用记事本打开 id_rsa.pub 并复制，然后打开 github 账户的设置(Settings)，</p>
 <p>​        选择 SSH and GPG keys，点击 New SSH key ，title 随便取，key 即粘贴刚刚复制的公共密钥</p>
-<p>​        再回到 Gitbash ，输入 ssh -T git@github,com ，可查看是否安装成功</p>
+<p>​        再回到 Gitbash ，输入 ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#111;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#111;&#x6d;</a> ，可查看是否安装成功</p>
 <p>​        </p>
 <p>9、打开 blog 目录下的 _config.yml 文件（记事本），拉到末尾，将 deploy 改为</p>
 <p>​        deploy:<br>          type: git<br>          repo: <a target="_blank" rel="noopener" href="https://github.com/yourgithubname/yourgithubname.github.io.git">https://github.com/yourgithubname/yourgithubname.github.io.git</a>    # 注意改<br>          branch: master</p>
