@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="LATNC">
 <meta property="og:description" content="Nobody Cares">
-<meta property="og:locale">
+<meta property="og:locale" content="en_US">
 <meta property="article:author" content="LATNC">
 <meta name="twitter:card" content="summary">
   
@@ -59,8 +59,6 @@
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
-				<li><a href="/photos">相册</a></li>
-	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -79,13 +77,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://latnc-20.github.io/" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="https://latnc-20.github.io/" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="qq" target="_blank" href="/2454539459" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="qq" target="_blank" href="/assets/img/qq.jpg" title="qq"><i class="icon-qq"></i></a>
+					<a class="bilibili" target="_blank" href="https://latnc-20.github.io/" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
 		</nav>
@@ -115,33 +113,29 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://latnc-20.github.io/" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="https://latnc-20.github.io/" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="qq" target="_blank" href="/2454539459" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="qq" target="_blank" href="/assets/img/qq.jpg" title="qq"><i class="icon-qq"></i></a>
+						<a class="bilibili" target="_blank" href="https://latnc-20.github.io/" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/photos">相册</a></li>
+					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -186,39 +180,9 @@
 <p>3、在Git输入命令 npm install -g hexo-cli    ，即可安装Hexo，然后输入    hexo -v    即可查看版本</p>
 <p>​        （也有安装cnpm即npm镜像版本，速度更快，没试过）        </p>
 <p>​            npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org</a>     # 安装淘宝的cnpm管理器<br>​            cnpm -v<br>​            cnpm install -g hexo-cli</p>
-<p>4、新建空文件夹 blog，右击选择Git Bash Here，然后输入 hexo init    # 初始化Hexo</p>
-<p>​    （或通过命令行创建 mkdir 新的文件夹并进入 cd blog）</p>
-<p>​    （文件夹一定要建在 C:\Users\×××\ 目录下，否则用Gitbash输入接下来的命令会报错，即没有权限，）</p>
-<p>​    （3、4步先后顺序无所谓，好像最后npm、hexo文件都在同一个文件目录下）</p>
-<p>5、输入 npm install    (这步不要好像也行！？)</p>
-<p>​        hexo s/hexo server    # 启动本地博客服务</p>
-<p>​        （在浏览器输入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 即可访问，ctrl + C 可关闭）</p>
-<p>6、输入 hexo n “Hello Hexo”     # 创建新博客</p>
-<p>​        hexo clean     # 清理</p>
-<p>​        hexo g/hexo generate     # 生成</p>
-<p>​        hexo s</p>
-<p>​        然后刷新一下 localhost:4000，即可看到新写的博客</p>
-<p>7、将本地博客与github关联，在github上新建一个仓库（New repository），名字与用户名相同，尾部加 .github.io</p>
-<p>点击 Create repository  ，此时仓库为空，什么都没有</p>
-<p>​    （一定要设为公开的 public ，设为私有的 private 会看不到）</p>
-<p>8、回到 Gitbash 中，输入 git config –global user.name “YOURNAME”</p>
-<p>​        git config –global user.email “YOUREMAIL”    </p>
-<p>​        （设置 Git 账户，名字和邮箱均为github的用户名和邮箱）</p>
-<p>​        输入 git config user.name/user.email 即可查看</p>
-<p>​        然后输入 ssh-key -t ras -C “YOUREMAIL”    ，创建SSH，将SSH添加到Github，一路默认即可</p>
-<p>​        完成后会在目录下生成 .ssh 文件夹，里面的 id_rsa.pub 为公共密钥，另一个 is_rsa 为私有密钥</p>
-<p>​        用记事本打开 id_rsa.pub 并复制，然后打开 github 账户的设置(Settings)，</p>
-<p>​        选择 SSH and GPG keys，点击 New SSH key ，title 随便取，key 即粘贴刚刚复制的公共密钥</p>
-<p>​        再回到 Gitbash ，输入 ssh -T <a href="mailto:&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#109;</a> ，可查看是否安装成功</p>
-<p>​        </p>
-<p>9、打开 blog 目录下的 _config.yml 文件（记事本），拉到末尾，将 deploy 改为</p>
-<p>​        deploy:<br>          type: git<br>          repo: <a target="_blank" rel="noopener" href="https://github.com/yourgithubname/yourgithubname.github.io.git">https://github.com/yourgithubname/yourgithubname.github.io.git</a>    # 注意改<br>          branch: master</p>
-<p>​    （注意格式，type、repo、branch前面均有两个空格，“:”后均有一个空格）</p>
-<p>​    然后输入 npm install hexo-deployer-git –save</p>
-<p>​    再输入 hexo clean        hexo g        hexo d/hexo deploy</p>
-<p>​    输入hexo d 后，要输入 github 账户的密码，一次没出现在输入一次就行（我就是，第一遍没跳要输入密码）</p>
-<p>​    最后在自己新建的仓库刷新一下就有了，然后就可以通过 <a target="_blank" rel="noopener" href="https://yourgithubname.github.io/">https://yourgithubname.github.io/</a>    访问了</p>
-
+        
+          <a class="article-more-a" href="/2021/04/19/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88Hexo-Github%EF%BC%89/#more">more >></a>
+        
       
 
       
@@ -360,13 +324,9 @@
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        
+          <a class="article-more-a" href="/2021/04/19/hello-world/#more">more >></a>
+        
       
 
       
