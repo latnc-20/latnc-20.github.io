@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | LATNC</title>
+  <title>python作业及实验 | LATNC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LATNC">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="python课上的作业及实验 作业部分一、改进猜数字游戏​    由机器随机生成一个1~100之间的整数，用户输入猜测数字">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python作业及实验">
+<meta property="og:url" content="http://example.com/2021/04/22/python%E4%BD%9C%E4%B8%9A%E5%8F%8A%E5%AE%9E%E9%AA%8C/index.html">
 <meta property="og:site_name" content="LATNC">
+<meta property="og:description" content="python课上的作业及实验 作业部分一、改进猜数字游戏​    由机器随机生成一个1~100之间的整数，用户输入猜测数字">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-04-22T14:31:29.000Z">
+<meta property="article:modified_time" content="2021-04-22T16:11:48.023Z">
 <meta property="article:author" content="LATNC">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="LATNC" type="application/atom+xml">
@@ -150,36 +155,144 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-python作业及实验" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/22/python%E4%BD%9C%E4%B8%9A%E5%8F%8A%E5%AE%9E%E9%AA%8C/" class="archive-article-date">
-  	<time datetime="2021-04-22T14:31:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/22/python%E4%BD%9C%E4%B8%9A%E5%8F%8A%E5%AE%9E%E9%AA%8C/">python作业及实验</a>
+    <h1 class="article-title" itemprop="name">
+      python作业及实验
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/04/22/python%E4%BD%9C%E4%B8%9A%E5%8F%8A%E5%AE%9E%E9%AA%8C/" class="archive-article-date">
+  	<time datetime="2021-04-22T14:31:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="python课上的作业及实验"><a href="#python课上的作业及实验" class="headerlink" title="python课上的作业及实验"></a>python课上的作业及实验</h3><hr>
+<h4 id="作业部分"><a href="#作业部分" class="headerlink" title="作业部分"></a>作业部分</h4><h5 id="一、改进猜数字游戏"><a href="#一、改进猜数字游戏" class="headerlink" title="一、改进猜数字游戏"></a>一、改进猜数字游戏</h5><p>​    由机器随机生成一个1~100之间的整数，用户输入猜测数字</p>
+<span id="more"></span>
+
+<p>要求：</p>
+<p>​    当用户输入不符合要求时（输入为字符、小数或超出范围），给出相应提示，并让用户重新输入</p>
+<p>​    一次猜对给予鼓励，超过5次猜错则进行嘲讽。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">n = <span class="number">100</span>  <span class="comment"># 范围上限</span></span><br><span class="line">i = <span class="number">0</span>  <span class="comment"># 猜数的次数</span></span><br><span class="line">num = random.randint(<span class="number">1</span>, n)  <span class="comment"># 随机生成一个整数</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">InputError</span>(<span class="params">Exception</span>):</span></span><br><span class="line">    <span class="comment"># 自定义异常类，继承普通异常基类 Exception</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, error</span>):</span></span><br><span class="line">        self.error = error</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.error</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:  <span class="comment"># 一直让用户输入，直到猜出数字</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        guess = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入一个1~&#123;&#125;之间的整数：&#x27;</span>.<span class="built_in">format</span>(n)))</span><br><span class="line">        <span class="keyword">if</span> guess &lt; <span class="number">1</span> <span class="keyword">or</span> guess &gt; n:  <span class="comment"># 判断输入是否超出范围</span></span><br><span class="line">            <span class="keyword">raise</span> InputError(guess)  <span class="comment"># raise手动抛出异常</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span> ValueError <span class="keyword">as</span> v:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;输入错误，请输入1~&#123;&#125;之间的整数，你输入的是：&#x27;</span>.<span class="built_in">format</span>(n), v.args)</span><br><span class="line">    <span class="keyword">except</span> InputError <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;输入错误，请输入1~&#123;&#125;之间的整数，你输入的是：&#x27;</span>.<span class="built_in">format</span>(n), e.error)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:  <span class="comment"># 不管是出现异常，都要执行else语句块中的代码</span></span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> guess == num:</span><br><span class="line">            <span class="keyword">if</span> i == <span class="number">1</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;厉害哈！一次就猜对了呢！&#x27;</span>)</span><br><span class="line">            <span class="keyword">elif</span> <span class="number">1</span> &lt; i &lt;= <span class="number">5</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;不错哈，一共猜了&#123;&#125;次猜对了。&#x27;</span>.<span class="built_in">format</span>(i))</span><br><span class="line">            <span class="keyword">elif</span> i &gt; <span class="number">5</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;真菜啊，一共猜了&#123;&#125;次猜对了。&#x27;</span>.<span class="built_in">format</span>(i))</span><br><span class="line">            <span class="keyword">break</span>  <span class="comment"># 猜对后通过break退出循环</span></span><br><span class="line">        <span class="keyword">elif</span> n &gt;= guess &gt; num:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;比这个小&quot;</span>)</span><br><span class="line">        <span class="keyword">elif</span> <span class="number">1</span> &lt;= guess &lt; num:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;比这个大&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;游戏结束！！！&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>说明：①对于抛出数字超出范围的异常，自己重新了一个新的异常类，并通过 raise 手动抛出</p>
+<p>​            ②抛出异常后，不是立刻结束程序，而是继续输入，直到猜出正确的数字</p>
+<h5 id="二、写一个密码自动生成程序"><a href="#二、写一个密码自动生成程序" class="headerlink" title="二、写一个密码自动生成程序"></a>二、写一个密码自动生成程序</h5><p>要求：</p>
+<p>​    程序中必须定义一个生成随机密码的函数pwdgen (length)</p>
+<p>​    参数length为密码长度，由用户输入确定</p>
+<p>​    要求必须同时包含大小写字母和数字</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> string</span><br><span class="line"></span><br><span class="line">password_list = []  <span class="comment"># 空列表，用于存放生成的随机密码</span></span><br><span class="line">s = string.ascii_lowercase + string.ascii_uppercase + string.digits  <span class="comment"># 包含大小写字母和数字</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">pwdgen</span>(<span class="params">length</span>):</span></span><br><span class="line">    <span class="comment"># 生成随机密码且同时包含大小写字母和数字</span></span><br><span class="line">    password = random.choice(string.ascii_uppercase)</span><br><span class="line">    password += random.choice(string.ascii_lowercase)</span><br><span class="line">    password += random.choice(string.digits)</span><br><span class="line">    password_list.append(password)  <span class="comment"># 密码至少为3位，已同时包含大小写字母和数字</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> length &gt; <span class="number">3</span>:</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(length - <span class="number">3</span>):</span><br><span class="line">            p = random.choice(s)  <span class="comment"># 使用random函数从序列s中随机挑选一个元素</span></span><br><span class="line">            password_list.append(p)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 将列表中的元素提取出来并连接成新的字符串组成密码</span></span><br><span class="line">    pass_result = <span class="string">&quot;&quot;</span>.join(password_list)  </span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;系统随机生成的密码为：&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(pass_result))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*****系统随机生成密码*****&quot;</span>)</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        length = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请设置你想取几位数的密码：&quot;</span>))</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;请输入整数数字。&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> length &lt; <span class="number">3</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;密码至少为3位，请重新输入。&quot;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            pwdgen(length)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;********************&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>说明：string 库用于直接使用库中的大小写字母以及数字（当然还有特殊符号等）</p>
+<p>​            random 库是用于随机选出字母或数字，用到的是 choice 方法，从一个序列中随机取一个元素</p>
+<p>​            基本思路：for循环从序列 s (大小写字母和数字) 中取出一个，循环次数为密码长度 length，</p>
+<p>​            加到 password_list 列表的末尾，然后用 join 函数将取出的元素连接并打印输出</p>
+<p>​        ①要满足同时包含大小写字母和数字，因此可直接从大小字母、小写字母和数字的序列中分别取出一个，</p>
+<p>​            加到 password_list 列表末尾，再从整个序列 s 中随机取，构成至少3位数的密码</p>
+<p>​        ②为提高使用性，加入 try-except-else 语句块，并外层加一个 while True 循环，</p>
+<p>​            使得程序启动后一定会生成一个满足要求的密码（借鉴了作业一）</p>
+<h5 id="三、设计一简单的游戏"><a href="#三、设计一简单的游戏" class="headerlink" title="三、设计一简单的游戏"></a>三、设计一简单的游戏</h5><p>要求：</p>
+<p>​    创建一个名为Undercut的游戏，包含Player基类并派生Human 、Computer两种子类。</p>
+<p>​    人类玩家Human通过键盘输入一个1~10之间的数字，而计算机玩家Computer使用random模块来选择数字。所有玩家都有名字和分数。</p>
+<p>​    两个玩家同时选择1-10之间的整数，若一个玩家选择的整数比对方选择的整数小1，则该玩家获胜，否则算打平手。</p>
+<p>​    例如，若Tom和Jerry一起玩游戏Undercut，且他们选择的数字分别为9和10，则Tom获胜；如果他们分别选择4和7，则打成平手。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Player</span>():</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<h4 id="实验部分"><a href="#实验部分" class="headerlink" title="实验部分"></a>实验部分</h4><h5 id="一、JSON文件的读取和处理"><a href="#一、JSON文件的读取和处理" class="headerlink" title="一、JSON文件的读取和处理"></a>一、JSON文件的读取和处理</h5><p>任务描述：</p>
+<p>​    从给定的图片数据集中，随机的挑选5张图片，根据这5张图片找出对应的标注信息</p>
+<p>任务背景：</p>
+<p>​    TextVQA是一个面向图像中的文字信息进行视觉问答的数据集（<a target="_blank" rel="noopener" href="https://textvqa.org/%EF%BC%89%E3%80%82%E5%AE%8C%E6%95%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86%E5%8C%85%E5%90%AB3W%E5%A4%9A%E5%BC%A0%E5%9B%BE%E7%89%87%E3%80%82%E6%AF%8F%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87%E4%B8%8A%E9%83%BD%E6%A0%87%E6%B3%A8%E4%BA%86%E5%9C%BA%E6%99%AF%E6%96%87%E5%AD%97%E6%A3%80%E6%B5%8B%E7%9A%84%E7%BB%93%E6%9E%9C%EF%BC%88%E6%96%87%E5%AD%97%E7%9A%84%E5%86%85%E5%AE%B9%E5%92%8C%E4%BD%8D%E7%BD%AE%E5%9D%90%E6%A0%87%EF%BC%89%E5%92%8C%E8%8B%A5%E5%B9%B2%E4%B8%AA%E9%92%88%E5%AF%B9%E5%9B%BE%E5%83%8F%E4%B8%AD%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9%E8%BF%9B%E8%A1%8C%E6%8F%90%E9%97%AE%E5%92%8C%E5%9B%9E%E7%AD%94%E7%9A%84%E9%97%AE%E7%AD%94%E5%AF%B9%E3%80%82">https://textvqa.org/）。完整的数据集包含3W多张图片。每一张图片上都标注了场景文字检测的结果（文字的内容和位置坐标）和若干个针对图像中文字内容进行提问和回答的问答对。</a></p>
+<p>​    本次上机课程从TextVQA的验证集（validation data）中选取了100张图片放在img文件夹中。数据集的标注信息包含在两个json文件中，其中TextVQA_0.5.1_val.json中包含全部验证集5000张图片的image_id,  question,  gt answer,  image_class等信息；TextVQA_Rosetta_OCR_v0.2_val.json中包含全部数据集3W+张图片的文字标注信息（OCR：光学字符识别）</p>
+<p>任务要求：</p>
+<ol>
+<li>要求编写函数：getFileList(path) 实现从指定的文件夹下随机挑选5张图片</li>
+<li>要求编写函数：readJSON(json_path) 实现读取并查看JSON文件中的内容,</li>
+<li>图片的文件名和json文件中image_id所对应的值一致。根据选择的文件名在两个json文件中找到对应的标注信息，并打印图片和其对应的question和ocr_tokens两个标注信息。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> </span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h5 id="二、比较图像直方图区别变化"><a href="#二、比较图像直方图区别变化" class="headerlink" title="二、比较图像直方图区别变化"></a>二、比较图像直方图区别变化</h5><p>任务描述：</p>
+<p>​    读入图像进行图像像素变换，打印出变换前后的直方图。</p>
+<p>任务背景：</p>
+<p>​    指定图像image.jpg，用PIL模块读入</p>
+<p>​    用matplotlib绘制图像转换前后的直方图</p>
+<p>​    R\G\B通道分离可以用Image对象的split()方法</p>
+<p>​    图像变换方式采用课件中52页的变换处理</p>
+<p>任务要求：</p>
+<ol>
+<li>绘图包含标题、坐标轴包含名称、图例。</li>
+<li>每个直方图对彩色图像分为R\G\B三通道，三个通道分别统计；</li>
+<li>两个直方图用不同颜色表示，要求设置宽度、颜色、透明度美观简洁</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">I = Image.<span class="built_in">open</span>(<span class="string">&#x27;image.jpg&#x27;</span>)  <span class="comment"># 读入图片，注意路径</span></span><br><span class="line">im = np.array(I)  <span class="comment"># 将图片转换为二维数组的像素点值</span></span><br><span class="line">r, g, b = Image.Image.split(I)  <span class="comment"># 将R，G，B通道分离，得到仍然是图片</span></span><br><span class="line"><span class="comment"># 将得到的R，G，B三路通道的图片分别转换为二维数组的像素点值</span></span><br><span class="line">r1 = np.array(r).flatten()  <span class="comment"># flatten()将二维数组转化为一维数组</span></span><br><span class="line">g1 = np.array(g).flatten()</span><br><span class="line">b1 = np.array(b).flatten()</span><br><span class="line">plt.subplot(<span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">plt.hist(r1, bins=<span class="number">256</span>, facecolor=<span class="string">&#x27;r&#x27;</span>, edgecolor=<span class="string">&#x27;r&#x27;</span>, alpha=<span class="number">0.5</span>)  <span class="comment"># hist()，绘制直方图</span></span><br><span class="line">plt.hist(g1, bins=<span class="number">256</span>, facecolor=<span class="string">&#x27;g&#x27;</span>, edgecolor=<span class="string">&#x27;g&#x27;</span>, alpha=<span class="number">0.5</span>)</span><br><span class="line">plt.hist(b1, bins=<span class="number">256</span>, facecolor=<span class="string">&#x27;b&#x27;</span>, edgecolor=<span class="string">&#x27;b&#x27;</span>, alpha=<span class="number">0.5</span>)  <span class="comment"># 分别画出三通道的直方图，然后叠加在一起</span></span><br><span class="line">plt.title(<span class="string">&#x27;图像转换前的直方图&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;每个像素点的灰度值&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;每个像素点灰度值出现的频率&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 进行图像转换，PPT52页内容</span></span><br><span class="line">im1 = <span class="number">255</span> - im  <span class="comment"># 反变换</span></span><br><span class="line">im2 = (<span class="number">100</span> / <span class="number">255</span>) * im + <span class="number">150</span>  <span class="comment"># 区间变换</span></span><br><span class="line">im3 = <span class="number">255</span> * (im / <span class="number">255</span>) ** <span class="number">2</span>  <span class="comment"># 像素平方处理</span></span><br><span class="line">pil_im = Image.fromarray(np.uint8(im3))  <span class="comment"># 分别对im1, im2, im3执行</span></span><br><span class="line"><span class="comment"># pil_im是转换后得到的新图像，操作同上</span></span><br><span class="line">pil_r, pil_g, pil_b = Image.Image.split(pil_im)</span><br><span class="line">pil_r1 = np.array(pil_r).flatten()</span><br><span class="line">pil_g1 = np.array(pil_g).flatten()</span><br><span class="line">pil_b1 = np.array(pil_b).flatten()</span><br><span class="line">plt.subplot(<span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">plt.hist(pil_r1, bins=<span class="number">256</span>, facecolor=<span class="string">&#x27;r&#x27;</span>, edgecolor=<span class="string">&#x27;r&#x27;</span>, alpha=<span class="number">0.5</span>)</span><br><span class="line">plt.hist(pil_g1, bins=<span class="number">256</span>, facecolor=<span class="string">&#x27;g&#x27;</span>, edgecolor=<span class="string">&#x27;g&#x27;</span>, alpha=<span class="number">0.5</span>)</span><br><span class="line">plt.hist(pil_b1, bins=<span class="number">256</span>, facecolor=<span class="string">&#x27;b&#x27;</span>, edgecolor=<span class="string">&#x27;b&#x27;</span>, alpha=<span class="number">0.5</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;图像转换后的直方图&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;每个像素点的灰度值&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;每个像素点灰度值出现的频率&#x27;</span>)</span><br><span class="line"><span class="comment"># 下面两段代码是设置中文字体，即直方图的标题和x,y轴的标注</span></span><br><span class="line">plt.rcParams[<span class="string">&#x27;font.family&#x27;</span>] = <span class="string">&#x27;SimHei&#x27;</span></span><br><span class="line">plt.rcParams[<span class="string">&#x27;font.sans-serif&#x27;</span>] = [<span class="string">&#x27;SimHei&#x27;</span>]</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p>（参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39709535/article/details/81837675%EF%BC%89">https://blog.csdn.net/qq_39709535/article/details/81837675）</a></p>
+<p>说明：主要是python中库的应用，一些方法函数的使用，可上网查找或官网</p>
+<p>​            想过代码改进，思路是将图片转换为二维数组的像素点值并转换为一维数组这一系列步骤封装成函数</p>
+<p>​            （hist() 函数中的 normed 参数写了会报错，不知道为什么）</p>
+<p>（下为原实验二，由于老师直接把代码放出来了，所以临时换成了上面的实验）</p>
+<h5 id="实验二、阻尼衰减曲线绘制"><a href="#实验二、阻尼衰减曲线绘制" class="headerlink" title="###实验二、阻尼衰减曲线绘制"></a>###实验二、阻尼衰减曲线绘制</h5><p>任务描述：</p>
+<p>​    绘制阻尼衰减曲线图</p>
+<p>任务背景：</p>
+<p>​    matplotlib.pyplot下的annotate函数可以添加注释，具体用法自己上网查阅 </p>
+<p>​    图示标题为中文，设置中文字体的方法：</p>
+<p>​    matplotlib.rcParams[‘font.family’]=’SimHei’</p>
+<p>​    matplotlib.rcParams[‘font.sans-serif’] = [‘SimHei’]</p>
+<p>任务要求：</p>
+<ol>
+<li>绘图包含标题、坐标轴包含名称、图例、箭头注释、阴影区域、阴影内文字</li>
+<li>两个信号用不同颜色、粗细、线型表示</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># 阴影区域</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Shadow</span>(<span class="params">a, b</span>):</span></span><br><span class="line">    ix = (x &gt; a) &amp; (x &lt; b)</span><br><span class="line">    plt.fill_between(x, y, <span class="number">0</span>, where=ix, facecolor=<span class="string">&#x27;grey&#x27;</span>, alpha=<span class="number">0.25</span>)</span><br><span class="line">    plt.text(<span class="number">0.5</span> * (a + b), <span class="number">0.2</span>, <span class="string">&quot;$\int_a^b f(x)\mathrm&#123;d&#125;x$&quot;</span>,</span><br><span class="line">             horizontalalignment=<span class="string">&#x27;center&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"><span class="comment"># 横纵坐标</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">XY_Axis</span>(<span class="params">x_start, x_end, y_start, y_end</span>):</span></span><br><span class="line">    plt.xlim(x_start, x_end)</span><br><span class="line">    plt.ylim(y_start, y_end)</span><br><span class="line">    plt.xticks([np.pi/<span class="number">3</span>, <span class="number">2</span> * np.pi/<span class="number">3</span>, <span class="number">1</span> * np.pi, <span class="number">4</span> * np.pi/<span class="number">3</span>, <span class="number">5</span> * np.pi/<span class="number">3</span>],</span><br><span class="line">               [<span class="string">&#x27;$\pi/3$&#x27;</span>, <span class="string">&#x27;$2\pi/3$&#x27;</span>, <span class="string">&#x27;$\pi$&#x27;</span>, <span class="string">&#x27;$4\pi/3$&#x27;</span>, <span class="string">&#x27;$5\pi/3$&#x27;</span>])</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">x = np.linspace(<span class="number">0.0</span>, <span class="number">6.0</span>, <span class="number">100</span>)</span><br><span class="line">y = np.cos(<span class="number">2</span> * np.pi * x) * np.exp(-x)+<span class="number">0.8</span></span><br><span class="line">z = <span class="number">0.5</span> * np.cos(x ** <span class="number">2</span>)+<span class="number">0.8</span></span><br><span class="line">note_point, note_text, note_size = (<span class="number">1</span>, np.cos(<span class="number">2</span> * np.pi) * np.exp(-<span class="number">1</span>)+<span class="number">0.8</span>), (<span class="number">1</span>, <span class="number">1.4</span>), <span class="number">10</span></span><br><span class="line">plt.plot(x, y, <span class="string">&#x27;b&#x27;</span>, label=<span class="string">&quot;$decay$&quot;</span>, color=<span class="string">&#x27;g&#x27;</span>, linewidth=<span class="number">4</span>)  <span class="comment"># 右上角图标说明</span></span><br><span class="line">plt.plot(x, z, <span class="string">&quot;r--&quot;</span>, label=<span class="string">&quot;$cos(x^2)$&quot;</span>, linewidth=<span class="number">2</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;时间(s)&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;幅度(mV)&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">u&quot;阻尼衰减曲线绘制&quot;</span>)</span><br><span class="line">plt.rcParams[<span class="string">&#x27;font.family&#x27;</span>] = <span class="string">&#x27;SimHei&#x27;</span></span><br><span class="line">plt.rcParams[<span class="string">&#x27;font.sans-serif&#x27;</span>] = [<span class="string">&#x27;SimHei&#x27;</span>]</span><br><span class="line">plt.annotate(<span class="string">&#x27;$\cos(2 \pi t) \exp(-t)$&#x27;</span>, xy=note_point, xytext=note_text, fontsize=note_size,</span><br><span class="line">             arrowprops=<span class="built_in">dict</span>(arrowstyle=<span class="string">&#x27;-&gt;&#x27;</span>, connectionstyle=<span class="string">&quot;arc3,rad=.1&quot;</span>))</span><br><span class="line">XY_Axis(<span class="number">0</span>, <span class="number">5</span>, <span class="number">0</span>, <span class="number">1.8</span>)</span><br><span class="line">Shadow(<span class="number">0.8</span>, <span class="number">3</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p>说明：主要是 text 函数和 annotate 函数添加注释的使用，还有如何绘制阴影区域和箭头并用文本注释</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,111 +304,68 @@
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/19/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88Hexo-Github%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2021-04-19T14:07:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-19</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/04/19/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88Hexo-Github%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">个人博客搭建（Hexo+Github）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/19/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88Hexo-Github%EF%BC%89/">个人博客搭建（Hexo+Github）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#python%E8%AF%BE%E4%B8%8A%E7%9A%84%E4%BD%9C%E4%B8%9A%E5%8F%8A%E5%AE%9E%E9%AA%8C"><span class="toc-number">1.</span> <span class="toc-text">python课上的作业及实验</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E4%B8%9A%E9%83%A8%E5%88%86"><span class="toc-number">1.1.</span> <span class="toc-text">作业部分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%94%B9%E8%BF%9B%E7%8C%9C%E6%95%B0%E5%AD%97%E6%B8%B8%E6%88%8F"><span class="toc-number">1.1.1.</span> <span class="toc-text">一、改进猜数字游戏</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%86%99%E4%B8%80%E4%B8%AA%E5%AF%86%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.1.2.</span> <span class="toc-text">二、写一个密码自动生成程序</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%AE%BE%E8%AE%A1%E4%B8%80%E7%AE%80%E5%8D%95%E7%9A%84%E6%B8%B8%E6%88%8F"><span class="toc-number">1.1.3.</span> <span class="toc-text">三、设计一简单的游戏</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E9%83%A8%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">实验部分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E3%80%81JSON%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%BB%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86"><span class="toc-number">1.2.1.</span> <span class="toc-text">一、JSON文件的读取和处理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%AF%94%E8%BE%83%E5%9B%BE%E5%83%8F%E7%9B%B4%E6%96%B9%E5%9B%BE%E5%8C%BA%E5%88%AB%E5%8F%98%E5%8C%96"><span class="toc-number">1.2.2.</span> <span class="toc-text">二、比较图像直方图区别变化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E4%BA%8C%E3%80%81%E9%98%BB%E5%B0%BC%E8%A1%B0%E5%87%8F%E6%9B%B2%E7%BA%BF%E7%BB%98%E5%88%B6"><span class="toc-number">1.2.3.</span> <span class="toc-text">###实验二、阻尼衰减曲线绘制</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/19/Hello-Hexo/" class="archive-article-date">
-  	<time datetime="2021-04-19T13:43:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-19</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/19/Hello-Hexo/">Hello Hexo</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/19/hello-world/" class="archive-article-date">
-  	<time datetime="2021-04-19T13:37:50.396Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/19/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -318,8 +388,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
