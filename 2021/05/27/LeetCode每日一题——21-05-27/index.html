@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: hexo | LATNC</title>
+  <title>LeetCode每日一题——21.05.27 | LATNC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LATNC">
-<meta property="og:url" content="http://example.com/tags/hexo/index.html">
+  <meta name="description" content="82. 删除排序链表中的重复元素 II存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。 返回同样按升序排列的结果链表。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode每日一题——21.05.27">
+<meta property="og:url" content="http://example.com/2021/05/27/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E2%80%94%E2%80%9421-05-27/index.html">
 <meta property="og:site_name" content="LATNC">
+<meta property="og:description" content="82. 删除排序链表中的重复元素 II存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。 返回同样按升序排列的结果链表。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-05-27T15:06:21.000Z">
+<meta property="article:modified_time" content="2021-05-27T16:47:40.366Z">
 <meta property="article:author" content="LATNC">
+<meta property="article:tag" content="LeetCode 链表">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="LATNC" type="application/atom+xml">
@@ -156,60 +161,151 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-LeetCode每日一题——21-05-27" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/19/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88Hexo-Github%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2021-04-19T14:07:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-19</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/19/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88Hexo-Github%EF%BC%89/">个人博客搭建（Hexo+Github）</a>
+    <h1 class="article-title" itemprop="name">
+      LeetCode每日一题——21.05.27
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/05/27/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E2%80%94%E2%80%9421-05-27/" class="archive-article-date">
+  	<time datetime="2021-05-27T15:06:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="82-删除排序链表中的重复元素-II"><a href="#82-删除排序链表中的重复元素-II" class="headerlink" title="82. 删除排序链表中的重复元素 II"></a>82. 删除排序链表中的重复元素 II</h4><p>存在一个按<strong>升序排列</strong>的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 <strong>没有重复出现</strong> 的数字。</p>
+<p>返回同样按升序排列的结果链表。 </p>
+<span id="more"></span>
+
+<p>示例 1：</p>
+<p>输入：head = [1,2,3,3,4,4,5]<br>输出：[1,2,5]<br>示例 2：</p>
+<p>输入：head = [1,1,1,2,3]<br>输出：[2,3]</p>
+<p>题解：自己写的：采用双指针，两指针相邻，用n记录慢指针的前一个元素的值，如果两指针元素的值不等，且慢指针所指的值与 n 的值也不等，则原指向哑结点的指针的 next 指向 slow ，更新 n 的值，slow 和 fast指针移动</p>
+<p>执行用时：<strong>12ms</strong>，在所有 C++ 提交中击败了**42.94%**的用户</p>
+<p>内存消耗：<strong>10.8 MB</strong>, 在所有 C++ 提交中击败了**54.11%**的用户</p>
+<p>​    时间复杂度：O(n)，只遍历一遍链表</p>
+<p>​    空间复杂度：O(1)，仅一个结点和多个指针，以及一个整数</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">nullptr</span> || head-&gt;next == <span class="literal">nullptr</span>) </span><br><span class="line">            <span class="keyword">return</span> head;</span><br><span class="line"></span><br><span class="line">        ListNode *dummy = <span class="keyword">new</span> <span class="built_in">ListNode</span>(<span class="number">-1</span>);  <span class="comment">//哑结点</span></span><br><span class="line">        dummy-&gt;next = head;</span><br><span class="line">        ListNode *p = dummy;</span><br><span class="line">        ListNode *fast = head-&gt;next, *slow = head;</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">1000</span>;  <span class="comment">//slow指针的前一个元素的值</span></span><br><span class="line">        <span class="keyword">while</span>(fast != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> (fast-&gt;val != slow-&gt;val)&#123;               </span><br><span class="line">                <span class="keyword">if</span> (slow-&gt;val != num)&#123;</span><br><span class="line">                    p-&gt;next = slow;  <span class="comment">//p指针的next指向为重复出现的值</span></span><br><span class="line">                    p = slow;        <span class="comment">//移动p指针</span></span><br><span class="line">                &#125;                   </span><br><span class="line">            &#125;</span><br><span class="line">            num = slow-&gt;val;</span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            <span class="comment">//num = slow-&gt;val;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (slow-&gt;val != num)  <span class="comment">//最后一个结点的值</span></span><br><span class="line">            p-&gt;next = slow;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            p-&gt;next = <span class="literal">nullptr</span>;</span><br><span class="line">        <span class="keyword">return</span> dummy-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>题解：创建哑结点，然后遍历，比较 p-&gt;next 与 p-&gt;next-&gt;next 指针所指向元素的值，如果不相等，则 p-&gt;next 所指元素的值是不重复的（p 开始指向哑结点）移动 p 指针；否则等的话，则记录下 p-&gt;next 所指元素的值 n ，移动 p-&gt;next ，再比较 该指针所指元素的值与 n 是否相等，如果不相等，再移动一次（因为重复的值是不保留的）。直至遍历完整个链表。</p>
+<ul>
+<li>好的地方：在于当出现重复元素时，仅仅移动指向重复元素的指针，而不需要将所有指针都移动，且变量少，效率也更高</li>
+</ul>
+<p>执行用时：<strong>4 ms</strong>, 在所有 C++ 提交中击败了**97.85%**的用户</p>
+<p>内存消耗：<strong>10.8 MB</strong>, 在所有 C++ 提交中击败了**61.66%**的用户</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">nullptr</span>) </span><br><span class="line">            <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line"></span><br><span class="line">        ListNode *dummy = <span class="keyword">new</span> <span class="built_in">ListNode</span>(<span class="number">-1</span>);</span><br><span class="line">        dummy-&gt;next = head;</span><br><span class="line">        ListNode *p = dummy;</span><br><span class="line">        <span class="keyword">while</span> (p-&gt;next != <span class="literal">nullptr</span> &amp;&amp; p-&gt;next-&gt;next != <span class="literal">nullptr</span>)&#123; <span class="comment">//比较后两个结点</span></span><br><span class="line">            <span class="keyword">if</span> (p-&gt;next-&gt;val == p-&gt;next-&gt;next-&gt;val)&#123; <span class="comment">//如果相等</span></span><br><span class="line">                <span class="keyword">int</span> n = p-&gt;next-&gt;val;</span><br><span class="line">                <span class="keyword">while</span>(p-&gt;next != <span class="literal">nullptr</span> &amp;&amp; p-&gt;next-&gt;val == n) </span><br><span class="line">                    p-&gt;next = p-&gt;next-&gt;next;  <span class="comment">//移动p-&gt;next，直到为空或值不重复</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                p = p-&gt;next;  <span class="comment">//移动p指针，该结点保留，即不重复的元素</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> dummy-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>此题与<em>83. 删除排序链表中的重复元素</em>基本相同，但要求为每个元素仅出现一次，此题是保留未重复的元素</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>❤谢谢你请我吃糖果❤<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">LeetCode 链表</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2021/05/27/LeetCode%E4%B8%80%E4%B8%AA%E6%9C%88%E6%B1%87%E6%80%BB%EF%BC%8821.05%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">LeetCode一个月汇总（21.05）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#82-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-II"><span class="toc-number">1.</span> <span class="toc-text">82. 删除排序链表中的重复元素 II</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -232,9 +328,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
