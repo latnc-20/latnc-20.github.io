@@ -16,7 +16,7 @@
 <meta property="og:description" content="118. 杨辉三角给定一个非负整数 numRows，生成杨辉三角的前 numRows 行。 在杨辉三角中，每个数是它左上方和右上方的数的和。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-06-05T14:26:17.000Z">
-<meta property="article:modified_time" content="2021-06-05T14:33:59.410Z">
+<meta property="article:modified_time" content="2021-06-12T16:43:25.283Z">
 <meta property="article:author" content="LATNC">
 <meta property="article:tag" content="LeetCode">
 <meta property="article:tag" content="数组">
@@ -188,10 +188,12 @@
 
 <p>示例:</p>
 <p>输入: 5<br>输出:<br>[<br>     [1],<br>    [1,1],<br>   [1,2,1],<br>  [1,3,3,1],<br> [1,4,6,4,1]<br>]</p>
-<p>题解：</p>
-<p>时间复杂度：</p>
-<p>空间复杂度：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<p>题解：每行首位都为1，中间元素为上一行相邻两元素之和</p>
+<p>执行用时：<strong>0 ms</strong></p>
+<p>内存消耗：<strong>6.4 MB</strong></p>
+<p>时间复杂度：O(numRows^2)</p>
+<p>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; <span class="built_in">generate</span>(<span class="keyword">int</span> numRows) &#123;</span><br><span class="line">        vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; <span class="built_in">result</span>(numRows);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numRows; i++)&#123;</span><br><span class="line">            result[i].<span class="built_in">resize</span>(i + <span class="number">1</span>);</span><br><span class="line">            result[i][<span class="number">0</span>] = result[i][i] = <span class="number">1</span>;  <span class="comment">//首位值为1</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; i; j++)&#123;</span><br><span class="line">                result[i][j] = result[i<span class="number">-1</span>][j] + result[i<span class="number">-1</span>][j<span class="number">-1</span>];  <span class="comment">//中间元素值</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -391,6 +393,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">LeetCode</a>
               </li>
              
@@ -399,19 +405,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">数组</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>

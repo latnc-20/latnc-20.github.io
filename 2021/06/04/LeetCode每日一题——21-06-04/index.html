@@ -16,7 +16,7 @@
 <meta property="og:description" content="725.分隔链表给定一个头结点为 root 的链表, 编写一个函数以将链表分隔为 k 个连续的部分。 每部分的长度应该尽可能的相等: 任意两部分的长度差距不能超过 1，也就是说可能有些部分为 null。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-06-04T15:36:13.000Z">
-<meta property="article:modified_time" content="2021-06-05T14:30:11.812Z">
+<meta property="article:modified_time" content="2021-06-11T17:26:31.049Z">
 <meta property="article:author" content="LATNC">
 <meta property="article:tag" content="LeetCode">
 <meta property="article:tag" content="链表">
@@ -193,9 +193,14 @@
 <p>输入:<br>root = [1, 2, 3], k = 5<br>输出: [[1],[2],[3],[],[]]<br>解释:<br>输入输出各部分都应该是链表，而不是数组。<br>例如, 输入的结点 root 的 val= 1, root.next.val = 2, \root.next.next.val = 3, 且 root.next.next.next = null。<br>第一个输出 output[0] 是 output[0].val = 1, output[0].next = null。<br>最后一个元素 output[4] 为 null, 它代表了最后一个部分为空链表。<br>示例 2：</p>
 <p>输入:<br>root = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k = 3<br>输出: [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]<br>解释:<br>输入被分成了几个连续的部分，并且每部分的长度相差不超过1.前面部分的长度大于等于后面部分的长度。</p>
 <p>题解：</p>
-<p>时间复杂度：</p>
-<p>空间复杂度：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>​    自己的思路：分为两种情况，如果链表长度 len 小于 k（要分隔成的 k 个部分），则链表分隔成每个链表仅一个结点，剩下的 k-len 个链表为空；如果链表长度 len 大于 k ，则分隔成的每个部分长度为 n = len / k ，如果能整除，则每个部分长度为 n ，否则有 m = len % k 个部分链表长度为 n+1 </li>
+</ul>
+<p>时间复杂度：O(n)</p>
+<p>空间复杂度：O(n)</p>
+<p>执行用时：<strong>8 ms</strong></p>
+<p>内存消耗：<strong>8.8 MB</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;ListNode*&gt; <span class="title">splitListToParts</span><span class="params">(ListNode* root, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = <span class="number">0</span>;</span><br><span class="line">        ListNode *cur = root;</span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            cur = cur-&gt;next;</span><br><span class="line">            len++;</span><br><span class="line">        &#125;  <span class="comment">//求出链表长度</span></span><br><span class="line">        </span><br><span class="line">        vector&lt;ListNode*&gt; result;</span><br><span class="line">        cur = root;</span><br><span class="line">        <span class="keyword">if</span> (k &gt;= len)&#123;  <span class="comment">//要分隔成的k个部分大于链表长度len</span></span><br><span class="line">            <span class="keyword">while</span>(k--)&#123;</span><br><span class="line">                <span class="keyword">if</span> (cur != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">                    ListNode *temp = cur-&gt;next;</span><br><span class="line">                    cur-&gt;next = <span class="literal">nullptr</span>;  <span class="comment">//要分隔成的链表next指针置空</span></span><br><span class="line">                    result.<span class="built_in">push_back</span>(cur);</span><br><span class="line">                    cur = temp;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    result.<span class="built_in">push_back</span>(cur);</span><br><span class="line">                &#125;   </span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> result;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> m = len % k;</span><br><span class="line">            <span class="keyword">while</span> (cur != <span class="literal">nullptr</span>)&#123;                </span><br><span class="line">                <span class="keyword">int</span> i = m &lt;= <span class="number">0</span> ? <span class="number">0</span> : <span class="number">1</span>;  <span class="comment">//前m个链表长度为n+1，剩下部分长度为n</span></span><br><span class="line">                <span class="keyword">int</span> n = len / k + i;  <span class="comment">//要分隔的链表的长度</span></span><br><span class="line">                m--;</span><br><span class="line">                ListNode *p = cur;</span><br><span class="line">                <span class="keyword">while</span> (n &gt; <span class="number">1</span>)&#123;</span><br><span class="line">                    cur = cur-&gt;next;</span><br><span class="line">                    n--;</span><br><span class="line">                &#125;</span><br><span class="line">                ListNode *temp = cur-&gt;next;</span><br><span class="line">                cur-&gt;next = <span class="literal">nullptr</span>;  <span class="comment">// ！！！不要漏掉</span></span><br><span class="line">                result.<span class="built_in">push_back</span>(p);</span><br><span class="line">                cur = temp;</span><br><span class="line">            &#125;              </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -404,6 +409,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">LeetCode</a>
               </li>
              
@@ -412,19 +421,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">数组</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
