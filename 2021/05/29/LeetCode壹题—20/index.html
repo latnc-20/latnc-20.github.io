@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>LeetCode每日一题——21.05.27 | LATNC</title>
+  <title>LeetCode壹题—20 | LATNC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="82. 删除排序链表中的重复元素 II存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。 返回同样按升序排列的结果链表。">
+  <meta name="description" content="86. 分隔链表—20 给你一个链表的头节点 head 和一个特定值 x ，请你对链表进行分隔，使得所有 小于 x 的节点都出现在 大于或等于 x 的节点之前。 你应当 保留 两个分区中每个节点的初始相对位置。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode每日一题——21.05.27">
-<meta property="og:url" content="http://example.com/2021/05/27/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E2%80%94%E2%80%9421-05-27/index.html">
+<meta property="og:title" content="LeetCode壹题—20">
+<meta property="og:url" content="http://example.com/2021/05/29/LeetCode%E5%A3%B9%E9%A2%98%E2%80%9420/index.html">
 <meta property="og:site_name" content="LATNC">
-<meta property="og:description" content="82. 删除排序链表中的重复元素 II存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。 返回同样按升序排列的结果链表。">
+<meta property="og:description" content="86. 分隔链表—20 给你一个链表的头节点 head 和一个特定值 x ，请你对链表进行分隔，使得所有 小于 x 的节点都出现在 大于或等于 x 的节点之前。 你应当 保留 两个分区中每个节点的初始相对位置。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-05-27T15:06:21.000Z">
-<meta property="article:modified_time" content="2021-05-29T06:45:10.226Z">
+<meta property="article:published_time" content="2021-05-29T05:33:28.000Z">
+<meta property="article:modified_time" content="2021-06-15T17:01:24.387Z">
 <meta property="article:author" content="LATNC">
 <meta property="article:tag" content="LeetCode">
 <meta property="article:tag" content="链表">
@@ -162,49 +162,44 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-LeetCode每日一题——21-05-27" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-LeetCode壹题—20" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode每日一题——21.05.27
+      LeetCode壹题—20
     </h1>
   
 
         
-        <a href="/2021/05/27/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E2%80%94%E2%80%9421-05-27/" class="archive-article-date">
-  	<time datetime="2021-05-27T15:06:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-27</time>
+        <a href="/2021/05/29/LeetCode%E5%A3%B9%E9%A2%98%E2%80%9420/" class="archive-article-date">
+  	<time datetime="2021-05-29T05:33:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="82-删除排序链表中的重复元素-II"><a href="#82-删除排序链表中的重复元素-II" class="headerlink" title="82. 删除排序链表中的重复元素 II"></a>82. 删除排序链表中的重复元素 II</h4><p>存在一个按<strong>升序排列</strong>的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 <strong>没有重复出现</strong> 的数字。</p>
-<p>返回同样按升序排列的结果链表。 </p>
+        <h4 id="86-分隔链表"><a href="#86-分隔链表" class="headerlink" title="86. 分隔链表"></a>86. 分隔链表</h4><p>—20</p>
+<p>给你一个链表的头节点 head 和一个特定值 x ，请你对链表进行分隔，使得所有 小于 x 的节点都出现在 大于或等于 x 的节点之前。</p>
+<p>你应当 保留 两个分区中每个节点的初始相对位置。</p>
 <span id="more"></span>
 
 <p>示例 1：</p>
-<p>输入：head = [1,2,3,3,4,4,5]<br>输出：[1,2,5]<br>示例 2：</p>
-<p>输入：head = [1,1,1,2,3]<br>输出：[2,3]</p>
-<p>题解：自己写的：采用双指针，两指针相邻，用n记录慢指针的前一个元素的值，如果两指针元素的值不等，且慢指针所指的值与 n 的值也不等，则原指向哑结点的指针的 next 指向 slow ，更新 n 的值，slow 和 fast指针移动</p>
-<p>执行用时：<strong>12ms</strong></p>
-<p>内存消耗：<strong>10.8 MB</strong></p>
-<p>​    时间复杂度：O(n)，只遍历一遍链表</p>
-<p>​    空间复杂度：O(1)，仅一个结点和多个指针，以及一个整数</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">nullptr</span> || head-&gt;next == <span class="literal">nullptr</span>) </span><br><span class="line">            <span class="keyword">return</span> head;</span><br><span class="line"></span><br><span class="line">        ListNode *dummy = <span class="keyword">new</span> <span class="built_in">ListNode</span>(<span class="number">-1</span>);  <span class="comment">//哑结点</span></span><br><span class="line">        dummy-&gt;next = head;</span><br><span class="line">        ListNode *p = dummy;</span><br><span class="line">        ListNode *fast = head-&gt;next, *slow = head;</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">1000</span>;  <span class="comment">//slow指针的前一个元素的值</span></span><br><span class="line">        <span class="keyword">while</span>(fast != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> (fast-&gt;val != slow-&gt;val)&#123;               </span><br><span class="line">                <span class="keyword">if</span> (slow-&gt;val != num)&#123;</span><br><span class="line">                    p-&gt;next = slow;  <span class="comment">//p指针的next指向为重复出现的值</span></span><br><span class="line">                    p = slow;        <span class="comment">//移动p指针</span></span><br><span class="line">                &#125;                   </span><br><span class="line">            &#125;</span><br><span class="line">            num = slow-&gt;val;</span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            <span class="comment">//num = slow-&gt;val;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (slow-&gt;val != num)  <span class="comment">//最后一个结点的值</span></span><br><span class="line">            p-&gt;next = slow;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            p-&gt;next = <span class="literal">nullptr</span>;</span><br><span class="line">        <span class="keyword">return</span> dummy-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>题解：创建哑结点，然后遍历，比较 p-&gt;next 与 p-&gt;next-&gt;next 指针所指向元素的值，如果不相等，则 p-&gt;next 所指元素的值是不重复的（p 开始指向哑结点）移动 p 指针；否则等的话，则记录下 p-&gt;next 所指元素的值 n ，移动 p-&gt;next ，再比较 该指针所指元素的值与 n 是否相等，如果不相等，再移动一次（因为重复的值是不保留的）。直至遍历完整个链表。</p>
+<p>输入：head = [1,4,3,2,5,2], x = 3<br>输出：[1,2,2,4,3,5]<br>示例 2：</p>
+<p>输入：head = [2,1], x = 2<br>输出：[1,2]</p>
+<p>题解：</p>
 <ul>
-<li>好的地方：在于当出现重复元素时，仅仅移动指向重复元素的指针，而不需要将所有指针都移动，且变量少，效率也更高</li>
+<li>自己开始的想法：找到第一个小于 x 和大于等于 x 的结点，然后依次将后面的结点插入到对应的第一个结点的后面，最后将两个连接起来即可，但在实现上出现了问题，过于在原链表上找那两个结点，最终没实现</li>
+<li>思路同我自己的想法差不多，实现上是创建两个结点，分别表示小于 x 和大于等于 x 的头结点 smallHead 和 largeHead，然后用两个指针指向两个头结点，然后遍历链表，判断大小，将对应的 next 指针指向相应的结点，最后将 large-&gt;next 置空</li>
 </ul>
 <p>执行用时：<strong>4 ms</strong></p>
-<p>内存消耗：<strong>10.8 MB</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">nullptr</span>) </span><br><span class="line">            <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line"></span><br><span class="line">        ListNode *dummy = <span class="keyword">new</span> <span class="built_in">ListNode</span>(<span class="number">-1</span>);</span><br><span class="line">        dummy-&gt;next = head;</span><br><span class="line">        ListNode *p = dummy;</span><br><span class="line">        <span class="keyword">while</span> (p-&gt;next != <span class="literal">nullptr</span> &amp;&amp; p-&gt;next-&gt;next != <span class="literal">nullptr</span>)&#123; <span class="comment">//比较后两个结点</span></span><br><span class="line">            <span class="keyword">if</span> (p-&gt;next-&gt;val == p-&gt;next-&gt;next-&gt;val)&#123; <span class="comment">//如果相等</span></span><br><span class="line">                <span class="keyword">int</span> n = p-&gt;next-&gt;val;</span><br><span class="line">                <span class="keyword">while</span>(p-&gt;next != <span class="literal">nullptr</span> &amp;&amp; p-&gt;next-&gt;val == n) </span><br><span class="line">                    p-&gt;next = p-&gt;next-&gt;next;  <span class="comment">//移动p-&gt;next，直到为空或值不重复</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                p = p-&gt;next;  <span class="comment">//移动p指针，该结点保留，即不重复的元素</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> dummy-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>内存消耗：<strong>9.9 MB</strong></p>
+<p>时间复杂度：O(n)<br>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">partition</span><span class="params">(ListNode* head, <span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        ListNode *smallHead = <span class="keyword">new</span> <span class="built_in">ListNode</span>(<span class="number">-1</span>);</span><br><span class="line">        ListNode *small = smallHead;</span><br><span class="line">        ListNode *largeHead = <span class="keyword">new</span> <span class="built_in">ListNode</span>(<span class="number">-1</span>);</span><br><span class="line">        ListNode *large = largeHead;</span><br><span class="line">        <span class="comment">/*ListNode *cur = head;</span></span><br><span class="line"><span class="comment">        while (cur != nullptr)&#123;</span></span><br><span class="line"><span class="comment">            if (cur-&gt;val &lt; x)&#123;</span></span><br><span class="line"><span class="comment">                small-&gt;next = cur;</span></span><br><span class="line"><span class="comment">                small = cur;</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            else&#123;</span></span><br><span class="line"><span class="comment">                large-&gt;next = cur;</span></span><br><span class="line"><span class="comment">                large = cur;</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            cur = cur-&gt;next;</span></span><br><span class="line"><span class="comment">        &#125;*/</span></span><br><span class="line">        <span class="keyword">while</span> (head != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (head-&gt;val &lt; x)&#123;</span><br><span class="line">                small-&gt;next = head;</span><br><span class="line">                small = head;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                large-&gt;next = head;</span><br><span class="line">                large = head;</span><br><span class="line">            &#125;</span><br><span class="line">            head = head-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        large-&gt;next = <span class="literal">nullptr</span>;</span><br><span class="line">        small-&gt;next = largeHead-&gt;next;        </span><br><span class="line">        <span class="keyword">return</span> smallHead-&gt;next;</span><br><span class="line">        <span class="comment">//return head;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p>此题与<em>83. 删除排序链表中的重复元素</em>基本相同，但要求为每个元素仅出现一次，此题是保留未重复的元素</p>
 
       
 
@@ -262,18 +257,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/05/29/LeetCode%E4%B8%80%E4%B8%AA%E6%9C%88%E6%B1%87%E6%80%BB%EF%BC%8821-05%EF%BC%89--II/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/05/29/LeetCode%E5%A3%B9%E9%A2%98%E2%80%9421/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          LeetCode一月总结（21.05）--II
+          LeetCode壹题—21
         
       </div>
     </a>
   
   
-    <a href="/2021/05/27/LeetCode%E4%B8%80%E4%B8%AA%E6%9C%88%E6%B1%87%E6%80%BB%EF%BC%8821.05%EF%BC%89--I/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">LeetCode一个月汇总（21.05）--I</div>
+    <a href="/2021/05/29/LeetCode%E5%A3%B9%E9%A2%98%E6%9C%88%E6%B1%87%E6%80%BB%EF%BC%8821-05%EF%BC%89--II/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">LeetCode壹题月汇总（21-05）--II</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -300,7 +295,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#82-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-II"><span class="toc-number">1.</span> <span class="toc-text">82. 删除排序链表中的重复元素 II</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#86-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">86. 分隔链表</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -421,6 +416,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">链表</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">栈</a>
               </li>
              
               <li class="article-tag-list-item">

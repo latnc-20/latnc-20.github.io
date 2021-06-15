@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>LeetCode每日一题——21.06.04 | LATNC</title>
+  <title>LeetCode壹题月汇总（21-05）--I | LATNC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="725.分隔链表给定一个头结点为 root 的链表, 编写一个函数以将链表分隔为 k 个连续的部分。 每部分的长度应该尽可能的相等: 任意两部分的长度差距不能超过 1，也就是说可能有些部分为 null。">
+  <meta name="description" content="数组26. 删除有序数组中的重复项—1 给你一个 有序 数组 nums ，请你 原地 删除重复出现的元素，使每个元素 只出现一次 ，返回删除后数组的新长度。 不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode每日一题——21.06.04">
-<meta property="og:url" content="http://example.com/2021/06/04/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E2%80%94%E2%80%9421-06-04/index.html">
+<meta property="og:title" content="LeetCode壹题月汇总（21-05）--I">
+<meta property="og:url" content="http://example.com/2021/05/27/LeetCode%E5%A3%B9%E9%A2%98%E6%9C%88%E6%B1%87%E6%80%BB%EF%BC%8821-05%EF%BC%89--I/index.html">
 <meta property="og:site_name" content="LATNC">
-<meta property="og:description" content="725.分隔链表给定一个头结点为 root 的链表, 编写一个函数以将链表分隔为 k 个连续的部分。 每部分的长度应该尽可能的相等: 任意两部分的长度差距不能超过 1，也就是说可能有些部分为 null。">
+<meta property="og:description" content="数组26. 删除有序数组中的重复项—1 给你一个 有序 数组 nums ，请你 原地 删除重复出现的元素，使每个元素 只出现一次 ，返回删除后数组的新长度。 不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-04T15:36:13.000Z">
-<meta property="article:modified_time" content="2021-06-11T17:26:31.049Z">
+<meta property="article:published_time" content="2021-05-27T13:41:10.000Z">
+<meta property="article:modified_time" content="2021-06-15T17:02:56.439Z">
 <meta property="article:author" content="LATNC">
 <meta property="article:tag" content="LeetCode">
 <meta property="article:tag" content="链表">
+<meta property="article:tag" content="数组">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="LATNC" type="application/atom+xml">
@@ -162,46 +163,232 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-LeetCode每日一题——21-06-04" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-LeetCode壹题月汇总（21-05）--I" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode每日一题——21.06.04
+      LeetCode壹题月汇总（21-05）--I
     </h1>
   
 
         
-        <a href="/2021/06/04/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E2%80%94%E2%80%9421-06-04/" class="archive-article-date">
-  	<time datetime="2021-06-04T15:36:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-04</time>
+        <a href="/2021/05/27/LeetCode%E5%A3%B9%E9%A2%98%E6%9C%88%E6%B1%87%E6%80%BB%EF%BC%8821-05%EF%BC%89--I/" class="archive-article-date">
+  	<time datetime="2021-05-27T13:41:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="725-分隔链表"><a href="#725-分隔链表" class="headerlink" title="725.分隔链表"></a>725.分隔链表</h4><p>给定一个头结点为 root 的链表, 编写一个函数以将链表分隔为 k 个连续的部分。</p>
-<p>每部分的长度应该尽可能的相等: 任意两部分的长度差距不能超过 1，也就是说可能有些部分为 null。</p>
+        <h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><h5 id="26-删除有序数组中的重复项"><a href="#26-删除有序数组中的重复项" class="headerlink" title="26. 删除有序数组中的重复项"></a>26. 删除有序数组中的重复项</h5><p>—1</p>
+<p>给你一个 <strong>有序</strong> 数组 nums ，请你 原地 删除重复出现的元素，使每个元素 只出现一次 ，返回删除后数组的新长度。</p>
+<p>不要使用额外的数组空间，你必须在 <strong>原地</strong> 修改输入数组 并在使用 O(1) 额外空间的条件下完成。</p>
 <span id="more"></span>
 
-<p>这k个部分应该按照在链表中出现的顺序进行输出，并且排在前面的部分的长度应该大于或等于后面的长度。</p>
-<p>返回一个符合上述规则的链表的列表。</p>
-<p>举例： 1-&gt;2-&gt;3-&gt;4, k = 5 // 5 结果 [ [1], [2], [3], [4], null ]</p>
 <p>示例 1：</p>
-<p>输入:<br>root = [1, 2, 3], k = 5<br>输出: [[1],[2],[3],[],[]]<br>解释:<br>输入输出各部分都应该是链表，而不是数组。<br>例如, 输入的结点 root 的 val= 1, root.next.val = 2, \root.next.next.val = 3, 且 root.next.next.next = null。<br>第一个输出 output[0] 是 output[0].val = 1, output[0].next = null。<br>最后一个元素 output[4] 为 null, 它代表了最后一个部分为空链表。<br>示例 2：</p>
-<p>输入:<br>root = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k = 3<br>输出: [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]<br>解释:<br>输入被分成了几个连续的部分，并且每部分的长度相差不超过1.前面部分的长度大于等于后面部分的长度。</p>
-<p>题解：</p>
-<ul>
-<li>​    自己的思路：分为两种情况，如果链表长度 len 小于 k（要分隔成的 k 个部分），则链表分隔成每个链表仅一个结点，剩下的 k-len 个链表为空；如果链表长度 len 大于 k ，则分隔成的每个部分长度为 n = len / k ，如果能整除，则每个部分长度为 n ，否则有 m = len % k 个部分链表长度为 n+1 </li>
-</ul>
-<p>时间复杂度：O(n)</p>
-<p>空间复杂度：O(n)</p>
-<p>执行用时：<strong>8 ms</strong></p>
-<p>内存消耗：<strong>8.8 MB</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;ListNode*&gt; <span class="title">splitListToParts</span><span class="params">(ListNode* root, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = <span class="number">0</span>;</span><br><span class="line">        ListNode *cur = root;</span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            cur = cur-&gt;next;</span><br><span class="line">            len++;</span><br><span class="line">        &#125;  <span class="comment">//求出链表长度</span></span><br><span class="line">        </span><br><span class="line">        vector&lt;ListNode*&gt; result;</span><br><span class="line">        cur = root;</span><br><span class="line">        <span class="keyword">if</span> (k &gt;= len)&#123;  <span class="comment">//要分隔成的k个部分大于链表长度len</span></span><br><span class="line">            <span class="keyword">while</span>(k--)&#123;</span><br><span class="line">                <span class="keyword">if</span> (cur != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">                    ListNode *temp = cur-&gt;next;</span><br><span class="line">                    cur-&gt;next = <span class="literal">nullptr</span>;  <span class="comment">//要分隔成的链表next指针置空</span></span><br><span class="line">                    result.<span class="built_in">push_back</span>(cur);</span><br><span class="line">                    cur = temp;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    result.<span class="built_in">push_back</span>(cur);</span><br><span class="line">                &#125;   </span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> result;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> m = len % k;</span><br><span class="line">            <span class="keyword">while</span> (cur != <span class="literal">nullptr</span>)&#123;                </span><br><span class="line">                <span class="keyword">int</span> i = m &lt;= <span class="number">0</span> ? <span class="number">0</span> : <span class="number">1</span>;  <span class="comment">//前m个链表长度为n+1，剩下部分长度为n</span></span><br><span class="line">                <span class="keyword">int</span> n = len / k + i;  <span class="comment">//要分隔的链表的长度</span></span><br><span class="line">                m--;</span><br><span class="line">                ListNode *p = cur;</span><br><span class="line">                <span class="keyword">while</span> (n &gt; <span class="number">1</span>)&#123;</span><br><span class="line">                    cur = cur-&gt;next;</span><br><span class="line">                    n--;</span><br><span class="line">                &#125;</span><br><span class="line">                ListNode *temp = cur-&gt;next;</span><br><span class="line">                cur-&gt;next = <span class="literal">nullptr</span>;  <span class="comment">// ！！！不要漏掉</span></span><br><span class="line">                result.<span class="built_in">push_back</span>(p);</span><br><span class="line">                cur = temp;</span><br><span class="line">            &#125;              </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>输入：nums = [1,1,2]<br>输出：2, nums = [1,2]<br>解释：函数应该返回新的长度 2 ，并且原数组 nums 的前两个元素被修改为 1, 2 。不需要考虑数组中超出新长度后面的元素。<br>示例 2：</p>
+<p>输入：nums = [0,0,1,1,1,2,2,3,3,4]<br>输出：5, nums = [0,1,2,3,4]<br>解释：函数应该返回新的长度 5 ， 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4 。不需要考虑数组中超出新长度后面的元素。</p>
+<p>题解：采用双指针，由于是有序数组，重复出现的元素必然是相邻的，定义两个指针 fast 和 slow 分别为快指针和慢指针，快指针表示遍历数组到达的下标位置，慢指针表示下一个不同元素要填入的下标位置，遍历整个数组，如果 fast 指针与 slow 指针指向的数相同，则 fast 指针移动，否则将 fast 指针的值复制到 slow，两指针都移动</p>
+<p>​    时间复杂度：O(n)</p>
+<p>​    空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">removeDuplicates</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = nums.<span class="built_in">size</span>();  <span class="comment">//数组长度</span></span><br><span class="line">        <span class="keyword">if</span>(n == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> slow =<span class="number">0</span>, fast = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(fast &lt; n)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[slow] != nums[fast])</span><br><span class="line">                nums[++slow] = nums[fast];</span><br><span class="line">            fast++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> slow + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
+
+
+<h5 id="88-合并两个有序数组"><a href="#88-合并两个有序数组" class="headerlink" title="88. 合并两个有序数组"></a>88. 合并两个有序数组</h5><p>—2</p>
+<p>给你两个<strong>有序</strong>整数数组 nums1 和 nums2，请你将 nums2 <u>合并到 nums1 中</u>，使 nums1 成为一个有序数组。</p>
+<p>初始化 nums1 和 nums2 的元素数量分别为 m 和 n 。你可以假设 nums1 的空间大小等于 m + n，这样它就有足够的空间保存来自 nums2 的元素。</p>
+<p>示例 1：</p>
+<p>输入：nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3<br>输出：[1,2,2,3,5,6]<br>示例 2：</p>
+<p>输入：nums1 = [1], m = 1, nums2 = [], n = 0<br>输出：[1]</p>
+<p>题解：采用逆向双指针，由于nums 1的后半部分是空的，可以直接覆盖而不会影响结果。因此可以指针设置为从后向前遍历，每次取两者之中的较大者放进nums 1的最后面。</p>
+<p>​    时间复杂度：O(m+n)，两数组共移动 m+n 次</p>
+<p>​    空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; nums1, <span class="keyword">int</span> m, vector&lt;<span class="keyword">int</span>&gt;&amp; nums2, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i = m - <span class="number">1</span>, j = n - <span class="number">1</span>;  <span class="comment">//分别指向两数组的尾部</span></span><br><span class="line">        <span class="keyword">int</span> k = m + n - <span class="number">1</span>;  <span class="comment">//合并后数组尾指针</span></span><br><span class="line">        <span class="keyword">int</span> cur = <span class="number">0</span>;        <span class="comment">//当前移动指针</span></span><br><span class="line">        <span class="keyword">while</span>(i &gt;= <span class="number">0</span> || j &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i == <span class="number">-1</span>)  <span class="comment">//nums 1数组遍历完</span></span><br><span class="line">                cur = nums2[j--];  <span class="comment">//nums 2数组剩余的数依次复制到nums 1前部</span></span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(j == <span class="number">-1</span>)</span><br><span class="line">                cur = nums1[i--];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(nums1[i] &gt;= nums2[j])  <span class="comment">//较大的数放在尾部</span></span><br><span class="line">                cur = nums1[i--];</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                cur = nums2[j--];</span><br><span class="line">            </span><br><span class="line">            nums1[k--] = cur;</span><br><span class="line">        &#125;       </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="167-两数之和-II-输入有序数组"><a href="#167-两数之和-II-输入有序数组" class="headerlink" title="167. 两数之和 II - 输入有序数组"></a>167. 两数之和 II - 输入有序数组</h5><p>—3</p>
+<p>给定一个已按照 <strong>升序排列</strong>  的整数数组 numbers ，请你从数组中找出两个数满足相加之和等于目标数 target 。</p>
+<p>函数应该以长度为 2 的整数数组的形式返回这两个数的下标值。numbers 的<u>下标 从 1 开始计数</u> ，所以答案数组应当满足 1 &lt;= answer[0] &lt; answer[1] &lt;= numbers.length 。</p>
+<p>你可以假设每个输入只对应唯一的答案，而且你不可以重复使用相同的元素。</p>
+<p>示例 1：</p>
+<p>输入：numbers = [2,7,11,15], target = 9<br>输出：[1,2]<br>解释：2 与 7 之和等于目标数 9 。因此 index1 = 1, index2 = 2 。<br>示例 2：</p>
+<p>输入：numbers = [2,3,4], target = 6<br>输出：[1,3]<br>示例 3：</p>
+<p>输入：numbers = [-1,0], target = -1<br>输出：[1,2]</p>
+<p>题解：采用双指针，两指针分别指向数组头和尾，由于数组升序排列，如果两指针指向元素之和等于 target，则返回数组下标，若小于 target，头指针（指向元素值小的指针）移动（值变大），若大于 target，尾指针移动（值变小），直至两指针指向元素之和等于 targe，否则返回{-1, -1}，表示未找到</p>
+<p>​    时间复杂度：O(n)</p>
+<p>​    空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">twoSum</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; numbers, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> p = <span class="number">0</span>, q = numbers.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(p &lt; q)&#123;</span><br><span class="line">            <span class="keyword">if</span>(numbers[p] + numbers[q] == target)</span><br><span class="line">                <span class="keyword">return</span> &#123;p + <span class="number">1</span>, q + <span class="number">1</span>&#125;;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(numbers[p] + numbers[q] &lt; target)  <span class="comment">//值小了，头指针移动</span></span><br><span class="line">                ++p;</span><br><span class="line">            <span class="keyword">else</span>  <span class="comment">//值大了，尾指针移动</span></span><br><span class="line">                --q;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> &#123;<span class="number">-1</span>, <span class="number">-1</span>&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="27-移除元素"><a href="#27-移除元素" class="headerlink" title="27. 移除元素"></a>27. 移除元素</h5><p>—4</p>
+<p>给你一个数组 nums 和一个值 val，你需要 <strong>原地</strong> 移除所有数值等于 val 的元素，并返回移除后数组的新长度。</p>
+<p>不要使用额外的数组空间，你必须仅使用 O(1) 额外空间并 原地 修改输入数组。</p>
+<p>元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。</p>
+<p>示例 1：</p>
+<p>输入：nums = [3,2,2,3], val = 3<br>输出：2, nums = [2,2]<br>解释：函数应该返回新的长度 2, 并且 nums 中的前两个元素均为 2。你不需要考虑数组中超出新长度后面的元素。例如，函数返回的新长度为 2 ，而 nums = [2,2,3,3] 或 nums = [2,2,0,0]，也会被视作正确答案。<br>示例 2：</p>
+<p>输入：nums = [0,1,2,2,3,0,4,2], val = 2<br>输出：5, nums = [0,1,4,0,3]<br>解释：函数应该返回新的长度 5, 并且 nums 中的前五个元素为 0, 1, 3, 0, 4。注意这五个元素可为任意顺序。你不需要考虑数组中超出新长度后面的元素。</p>
+<p>题解：双指针即可，优化：双指针分别指向数组头和尾，向中间移动遍历数组，若找到与 val 值相等的元素，则将尾指针的值覆盖头指针元素（改变了原数组顺序）</p>
+<p>​    时间复杂度：O(n)</p>
+<p>​    空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">removeElement</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> p = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>(); i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] != val)  <span class="comment">//两指针指向元素的值不等时</span></span><br><span class="line">                nums[p++] = nums[i];  <span class="comment">//将此指针指向的值复制到输出数组</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> p;  <span class="comment">//不需要返回p+1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h4 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h4><h5 id="21-合并两个有序链表"><a href="#21-合并两个有序链表" class="headerlink" title="21. 合并两个有序链表"></a>21. 合并两个有序链表</h5><p>—5</p>
+<p>将两个升序链表合并为一个新的 <strong>升序</strong> 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 </p>
+<p>示例1<br>输入：l1 = [1,2,4], l2 = [1,3,4]<br>输出：[1,1,2,3,4,4]</p>
+<p>示例2<br>输入：l1 = [], l2 = []<br>输出：[]     </p>
+<p>示例3<br>输入：l1 = [], l2 = [0]<br>输出：[0]</p>
+<p>题解：采用递归思想，将两个链表头部值较小的一个节点与剩下元素的 <code>merge</code> 操作结果合并。</p>
+<p>​    空间复杂度：O(m+n)，即两个链表长度</p>
+<p>​    时间复杂度：O(m+n)，即递归调用mergeTwoLists()函数消耗的栈空间，最多调用m+n次</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">mergeTwoLists</span><span class="params">(ListNode* l1, ListNode* l2)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//递归思想</span></span><br><span class="line">        <span class="keyword">if</span>(l1 == <span class="literal">nullptr</span>)  <span class="comment">//两种特殊情况1</span></span><br><span class="line">            <span class="keyword">return</span> l2;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(l2 == <span class="literal">nullptr</span>)  <span class="comment">//2</span></span><br><span class="line">            <span class="keyword">return</span> l1;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(l1-&gt;val &lt; l2-&gt;val)&#123;  <span class="comment">//较小结点与剩下元素合并</span></span><br><span class="line">            l1-&gt;next = <span class="built_in">mergeTwoLists</span>(l1-&gt;next, l2);</span><br><span class="line">            <span class="keyword">return</span> l1;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            l2-&gt;next = <span class="built_in">mergeTwoLists</span>(l1, l2-&gt;next);</span><br><span class="line">            <span class="keyword">return</span> l2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>解法2：采用迭代，新建一个结点，用于返回合并后的链表，再用一个指针指向这个结点，改变它的next指针，始终指向两个链表中较小的结点。</p>
+<p>​    空间复杂度：O(m+n)</p>
+<p>​    时间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">mergeTwoLists</span><span class="params">(ListNode* l1, ListNode* l2)</span> </span>&#123;</span><br><span class="line">        ListNode *dummy = <span class="keyword">new</span> <span class="built_in">ListNode</span>(<span class="number">-1</span>);</span><br><span class="line">        ListNode *pre = dummy;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (l1 != <span class="literal">nullptr</span> &amp;&amp; l2 != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (l1-&gt;val &lt; l2-&gt;val)&#123;</span><br><span class="line">                pre-&gt;next = l1;</span><br><span class="line">                l1 = l1-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                pre-&gt;next = l2;</span><br><span class="line">                l2 = l2-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">            pre = pre-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        pre-&gt;next = l1 == <span class="literal">nullptr</span> ? l2 : l1;</span><br><span class="line">        <span class="keyword">return</span> dummy-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="83-删除排序链表中的重复元素"><a href="#83-删除排序链表中的重复元素" class="headerlink" title="83. 删除排序链表中的重复元素"></a>83. 删除排序链表中的重复元素</h5><p>—6</p>
+<p>存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除所有重复的元素，使每个元素 只出现一次 。</p>
+<p>返回同样按升序排列的结果链表。</p>
+<p>示例 1：</p>
+<p>输入：head = [1,1,2]<br>输出：[1,2]<br>示例 2：</p>
+<p>输入：head = [1,1,2,3,3]<br>输出：[1,2,3]</p>
+<p>题解：一次遍历即可</p>
+<p>时间复杂度：O(n)</p>
+<p>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!head)</span><br><span class="line">            <span class="keyword">return</span> head;</span><br><span class="line">        </span><br><span class="line">        ListNode *cur = head;</span><br><span class="line">        <span class="keyword">while</span>(cur-&gt;next)&#123;</span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;val == cur-&gt;next-&gt;val)&#123;  <span class="comment">//相等，则指向下一个结点，即删除该结点</span></span><br><span class="line">                cur-&gt;next = cur-&gt;next-&gt;next;</span><br><span class="line">            &#125;    </span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                cur = cur-&gt;next;  <span class="comment">//不等，移动cur指针，保留该结点</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="141-环形链表"><a href="#141-环形链表" class="headerlink" title="141. 环形链表"></a>141. 环形链表</h5><p>—7</p>
+<p>给定一个链表，判断链表中是否有环。</p>
+<p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。</p>
+<p>如果链表中存在环，则返回 true 。 否则，返回 false 。 </p>
+<p>进阶：你能用 O(1)（即，常量）内存解决此问题吗？</p>
+<p>示例 1：</p>
+<p>输入：head = [3,2,0,-4], pos = 1<br>输出：true<br>解释：链表中有一个环，其尾部连接到第二个节点。<br>示例 2：</p>
+<p>输入：head = [1,2], pos = 0</p>
+<p>输出：true<br>解释：链表中有一个环，其尾部连接到第一个节点。<br>示例 3：</p>
+<p>输入：head = [1], pos = -1</p>
+<p>输出：false</p>
+<p>解释：链表中没有环。</p>
+<p>题解：采用快慢双指针即可，快指针每次移动两个结点，慢指针每次移动一个结点，若链表存在环，则快指针会先进入环，然后一直在环内循环，当慢指针进入环时，两指针必定在某时刻指向同一个结点；若不存在环，则快指针会到达链表尾，判断快指针是否为空即可。（即「Floyd 判圈算法」（又称龟兔赛跑算法））</p>
+<p>时间复杂度：O(n)</p>
+<p>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">hasCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">nullptr</span> || head-&gt;next == <span class="literal">nullptr</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">        ListNode *slow = head;</span><br><span class="line">        ListNode *fast = head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(slow != fast)&#123;  <span class="comment">//fast slow指针不指向同一个结点时，一直循环</span></span><br><span class="line">            <span class="keyword">if</span> (fast == <span class="literal">nullptr</span> || fast-&gt;next == <span class="literal">nullptr</span>)  <span class="comment">//当fast指针为空，则该链表无环</span></span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            fast = fast-&gt;next-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;  <span class="comment">//当fast slow指针指向同一个结点时退出循环，即链表中存在环</span></span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="160-相交链表"><a href="#160-相交链表" class="headerlink" title="160. 相交链表"></a>160. 相交链表</h5><p>—8</p>
+<p>编写一个程序，找到两个单链表相交的起始节点。</p>
+<p>如下面的两个链表：</p>
+<p>在节点 c1 开始相交。</p>
+<p>示例 1：</p>
+<p>输入：intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB = 3<br>输出：Reference of the node with value = 8<br>输入解释：相交节点的值为 8 （注意，如果两个链表相交则不能为 0）。从各自的表头开始算起，链表 A 为 [4,1,8,4,5]，链表 B 为 [5,0,1,8,4,5]。在 A 中，相交节点前有 2 个节点；在 B 中，相交节点前有 3 个节点。</p>
+<p>示例 2：</p>
+<p>输入：intersectVal = 2, listA = [0,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1<br>输出：Reference of the node with value = 2<br>输入解释：相交节点的值为 2 （注意，如果两个链表相交则不能为 0）。从各自的表头开始算起，链表 A 为 [0,9,1,2,4]，链表 B 为 [3,2,4]。在 A 中，相交节点前有 3 个节点；在 B 中，相交节点前有 1 个节点。</p>
+<p>示例 3：</p>
+<p>输入：intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2<br>输出：null<br>输入解释：从各自的表头开始算起，链表 A 为 [2,6,4]，链表 B 为 [1,5]。由于这两个链表不相交，所以 intersectVal 必须为 0，而 skipA 和 skipB 可以是任意值。<br>解释：这两个链表不相交，因此返回 null。</p>
+<p>题解：采用双指针解法，pA、pB分别指向两链表头结点，同时向后遍历，当pA到达A链表尾时，再把pA指向B链表头结点，同理pB结点也一样。当pA、pB结点指向同一个结点时，即为两链表相交的结点的位置。因为若两链表相交，相交部分长度为 L，则pA指针走过的距离为 A.len+(B.len-L)，pB指针走过的距离为 B.len+(A.len-L)，所以当pA、pB指针指向同一个结点时，该结点即为链表开始相交的位置。</p>
+<p>时间复杂度：O(m+n)</p>
+<p>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">getIntersectionNode</span><span class="params">(ListNode *headA, ListNode *headB)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (headA == <span class="literal">nullptr</span> || headB == <span class="literal">nullptr</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line"></span><br><span class="line">        ListNode *pA = headA;</span><br><span class="line">        ListNode *pB = headB;</span><br><span class="line">        <span class="keyword">while</span> (pA != pB)&#123;</span><br><span class="line">            pA = pA != <span class="literal">nullptr</span> ? pA-&gt;next : headB;</span><br><span class="line">            pB = pB != <span class="literal">nullptr</span> ? pB-&gt;next : headA;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> pA;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="203-移除链表元素"><a href="#203-移除链表元素" class="headerlink" title="203. 移除链表元素"></a>203. 移除链表元素</h5><p>—9</p>
+<p>给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点 。</p>
+<p>示例 1：</p>
+<p>输入：head = [1,2,6,3,4,5,6], val = 6<br>输出：[1,2,3,4,5]<br>示例 2：</p>
+<p>输入：head = [], val = 1<br>输出：[]<br>示例 3：</p>
+<p>输入：head = [7,7,7,7], val = 7<br>输出：[]</p>
+<p>题解：采用双指针即可</p>
+<p>时间复杂度：O(n)</p>
+<p>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">removeElements</span><span class="params">(ListNode* head, <span class="keyword">int</span> val)</span> </span>&#123;        </span><br><span class="line">        <span class="keyword">while</span> (head != <span class="literal">nullptr</span> &amp;&amp; head-&gt;val == val)</span><br><span class="line">            head = head-&gt;next;</span><br><span class="line">        <span class="comment">//双指针</span></span><br><span class="line">        ListNode *pre = head;</span><br><span class="line">        ListNode *cur = head;</span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (cur-&gt;val == val)&#123;</span><br><span class="line">                pre-&gt;next = cur-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                pre = cur;     </span><br><span class="line"></span><br><span class="line">            cur = cur-&gt;next;      </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="206-反转链表"><a href="#206-反转链表" class="headerlink" title="206. 反转链表"></a>206. 反转链表</h5><p>—10</p>
+<p>给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。</p>
+<p>示例 1：</p>
+<p>输入：head = [1,2,3,4,5]<br>输出：[5,4,3,2,1]<br>示例 2：</p>
+<p>输入：head = [1,2]<br>输出：[2,1]<br>示例 3：</p>
+<p>输入：head = []<br>输出：[]</p>
+<p>题解：迭代即可，用cur指针指向当前节点，将cur-&gt;next反转，如此下去</p>
+<p>时间复杂度：O(n)</p>
+<p>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">nullptr</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line"></span><br><span class="line">        ListNode *p = <span class="literal">nullptr</span>, *cur = head;</span><br><span class="line">        <span class="keyword">while</span>(cur != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            <span class="comment">//相当于把原链表的next指针全部反指，即指向前一个结点</span></span><br><span class="line">            ListNode *q = cur-&gt;next;  <span class="comment">//每次取出cur的下一个结点</span></span><br><span class="line">            cur-&gt;next = p;  <span class="comment">//cur的next指针指向p，此时cur与原链表已断开</span></span><br><span class="line">            p = cur;  <span class="comment">//p指向cur</span></span><br><span class="line">            cur = q;  <span class="comment">//cur指向q，即指向原链表剩余的部分</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> p;  </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="234-回文链表"><a href="#234-回文链表" class="headerlink" title="234. 回文链表"></a>234. 回文链表</h5><p>—11</p>
+<p>请判断一个链表是否为回文链表。</p>
+<p>进阶：<br>你能否用 O(n) 时间复杂度和 O(1) 空间复杂度解决此题？</p>
+<p>示例 1:</p>
+<p>输入: 1-&gt;2<br>输出: false<br>示例 2:</p>
+<p>输入: 1-&gt;2-&gt;2-&gt;1<br>输出: true</p>
+<p>题解：采用快慢双指针，当快指针到达链表末尾时，慢指针刚好在链表一半的位置，将慢指针走过的一半长度的链表反转，然后逐为比较是否相等即可<br>时间复杂度：O(n)</p>
+<p>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isPalindrome</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head == <span class="literal">nullptr</span> || head-&gt;next == <span class="literal">nullptr</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;  <span class="comment">//?</span></span><br><span class="line"></span><br><span class="line">        ListNode *p = <span class="literal">nullptr</span>, *cur = head;</span><br><span class="line">        ListNode *slow = head, *fast = head;<span class="comment">//fast只能指向head，否则slow到不了链表一半长度</span></span><br><span class="line">        <span class="keyword">while</span>(fast != <span class="literal">nullptr</span> &amp;&amp; fast-&gt;next != <span class="literal">nullptr</span>)&#123;<span class="comment">//反转链表前半部分</span></span><br><span class="line">            <span class="comment">//ListNode *th = cur-&gt;next; </span></span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            fast = fast-&gt;next-&gt;next;</span><br><span class="line">            cur-&gt;next = p;</span><br><span class="line">            p = cur;</span><br><span class="line">            cur = slow;                       </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (fast != <span class="literal">nullptr</span>)  <span class="comment">//链表长度为奇数</span></span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span>(slow != <span class="literal">nullptr</span> &amp;&amp; p != <span class="literal">nullptr</span>)&#123;  <span class="comment">//比较链表已反转的前半部分p和后半部分slow</span></span><br><span class="line">            <span class="keyword">if</span> (slow-&gt;val != p-&gt;val)</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="237-删除链表中的节点"><a href="#237-删除链表中的节点" class="headerlink" title="237. 删除链表中的节点"></a>237. 删除链表中的节点</h5><p>—12</p>
+<p>请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。传入函数的唯一参数为 要被删除的节点 。</p>
+<p>现有一个链表 – head = [4,5,1,9]，它可以表示为:</p>
+<p>示例 1：</p>
+<p>输入：head = [4,5,1,9], node = 5<br>输出：[4,1,9]<br>解释：给定你链表中值为 5 的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 1 -&gt; 9.<br>示例 2：</p>
+<p>输入：head = [4,5,1,9], node = 1<br>输出：[4,5,9]<br>解释：给定你链表中值为 1 的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 5 -&gt; 9.</p>
+<p>题解：交换要删除结点和该结点的下一个结点的值，next指针指向下下个结点即可<br>时间复杂度：O(1)<br>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">deleteNode</span><span class="params">(ListNode* node)</span> </span>&#123;</span><br><span class="line">        node-&gt;val = node-&gt;next-&gt;val;  <span class="comment">//将下一个结点的值赋给node,此时node为下一个结点</span></span><br><span class="line">        node-&gt;next = node-&gt;next-&gt;next;  <span class="comment">//改变next指针</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="876-链表的中间结点"><a href="#876-链表的中间结点" class="headerlink" title="876. 链表的中间结点"></a>876. 链表的中间结点</h5><p>—13</p>
+<p>给定一个头结点为 head 的非空单链表，返回链表的中间结点。</p>
+<p>如果有两个中间结点，则返回第二个中间结点。</p>
+<p>示例 1：</p>
+<p>输入：[1,2,3,4,5]<br>输出：此列表中的结点 3 (序列化形式：[3,4,5])<br>返回的结点值为 3 。 (测评系统对该结点序列化表述是 [3,4,5])。<br>注意，我们返回了一个 ListNode 类型的对象 ans，这样：<br>ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next = NULL.<br>示例 2：</p>
+<p>输入：[1,2,3,4,5,6]<br>输出：此列表中的结点 4 (序列化形式：[4,5,6])<br>由于该列表有两个中间结点，值分别为 3 和 4，我们返回第二个结点。</p>
+<p>题解：采用快慢双指针即可，当快指针到达链表末尾时，慢指针刚好到达链表中间</p>
+<p>时间复杂度：O(n)</p>
+<p>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">middleNode</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">        ListNode *slow = head, *fast = head;</span><br><span class="line">        <span class="keyword">while</span> (fast != <span class="literal">nullptr</span> &amp;&amp; fast-&gt;next != <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            fast= fast-&gt;next-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> slow;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="1290-二进制链表转整数"><a href="#1290-二进制链表转整数" class="headerlink" title="1290. 二进制链表转整数"></a>1290. 二进制链表转整数</h5><p>—14</p>
+<p>给你一个单链表的引用结点 head。链表中每个结点的值不是 0 就是 1。已知此链表是一个整数数字的二进制表示形式。</p>
+<p>请你返回该链表所表示数字的 十进制值 。</p>
+<p>示例 1：</p>
+<p>输入：head = [1,0,1]<br>输出：5<br>解释：二进制数 (101) 转化为十进制数 (5)<br>示例 2：</p>
+<p>输入：head = [0]<br>输出：0<br>示例 3：</p>
+<p>输入：head = [1]<br>输出：1<br>示例 4：</p>
+<p>输入：head = [1,0,0,1,0,0,1,1,1,0,0,0,0,0,0]<br>输出：18880<br>示例 5：</p>
+<p>输入：head = [0,0]<br>输出：0</p>
+<p>题解：模拟二进制数转化成十进制数的过程即可</p>
+<p>时间复杂度：O(n)</p>
+<p>空间复杂度：O(1)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getDecimalValue</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (head)&#123;</span><br><span class="line">            result = result * <span class="number">2</span> + head-&gt;val;<span class="comment">//十进制转化为二进制过程倒着推</span></span><br><span class="line">            head = head-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>以上题目均为简单题，作为初刷LeetCode的我来说，并怎么轻松，许多技巧并不是很了解，比如经常出现的双指针，还有代码的实现，因此一题花个半小时或更多时间是常有的事，但幸好慢慢刷起来了，现在做这些题目汇总的时候觉得确实是比较简单的，也许这就是刷了快20题回头看看简单题的感受吧。</p>
+<p>之所以先刷数组和链表的题，因为自己在看数据结构，已经把链表看完了，数组就是线性表，但初刷时C++中的vector并不是很熟，所以去刷链表了，链表中的简单题就是以上这些了，后面的就是中等题了。</p>
+<p>GoGoGo，奥利给！！！</p>
 
       
 
@@ -242,6 +429,10 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">链表</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数组</a>
+        		</li>
       		
 		</ul>
 	</div>
@@ -259,18 +450,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/06/05/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E2%80%94%E2%80%9421-06-05/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/05/27/LeetCode%E5%A3%B9%E9%A2%98%E2%80%9419/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          LeetCode每日一题——21.06.05
+          LeetCode壹题—19
         
       </div>
     </a>
   
   
-    <a href="/2021/06/03/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E2%80%94%E2%80%9421-06-03/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">LeetCode每日一题——21.06.03</div>
+    <a href="/2021/05/15/Python%E5%A4%A7%E4%BD%9C%E4%B8%9A/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python大作业</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -297,7 +488,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#725-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">725.分隔链表</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">1.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#26-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9"><span class="toc-number">1.1.</span> <span class="toc-text">26. 删除有序数组中的重复项</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#88-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84"><span class="toc-number">1.2.</span> <span class="toc-text">88. 合并两个有序数组</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#167-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-II-%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84"><span class="toc-number">1.3.</span> <span class="toc-text">167. 两数之和 II - 输入有序数组</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0"><span class="toc-number">1.4.</span> <span class="toc-text">27. 移除元素</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8"><span class="toc-number">2.</span> <span class="toc-text">链表</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#21-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8"><span class="toc-number">2.1.</span> <span class="toc-text">21. 合并两个有序链表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0"><span class="toc-number">2.2.</span> <span class="toc-text">83. 删除排序链表中的重复元素</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8"><span class="toc-number">2.3.</span> <span class="toc-text">141. 环形链表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#160-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8"><span class="toc-number">2.4.</span> <span class="toc-text">160. 相交链表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#203-%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0"><span class="toc-number">2.5.</span> <span class="toc-text">203. 移除链表元素</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8"><span class="toc-number">2.6.</span> <span class="toc-text">206. 反转链表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#234-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8"><span class="toc-number">2.7.</span> <span class="toc-text">234. 回文链表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#237-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9"><span class="toc-number">2.8.</span> <span class="toc-text">237. 删除链表中的节点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#876-%E9%93%BE%E8%A1%A8%E7%9A%84%E4%B8%AD%E9%97%B4%E7%BB%93%E7%82%B9"><span class="toc-number">2.9.</span> <span class="toc-text">876. 链表的中间结点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1290-%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%93%BE%E8%A1%A8%E8%BD%AC%E6%95%B4%E6%95%B0"><span class="toc-number">2.10.</span> <span class="toc-text">1290. 二进制链表转整数</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -418,6 +609,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">链表</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">栈</a>
               </li>
              
               <li class="article-tag-list-item">
